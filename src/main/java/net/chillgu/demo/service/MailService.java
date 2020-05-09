@@ -5,6 +5,8 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
+import com.sun.mail.util.logging.MailHandler;
+
 import net.chillgu.demo.dto.MailDto;
 
 @Service
@@ -15,13 +17,14 @@ public class MailService {
 	
 	private final String FROM_ADDRESS = "bbonggu92@gmail.com";
 	
-	public void sendMail(MailDto mailDto) {
-		SimpleMailMessage mailMessage = new SimpleMailMessage();
+	public void sendMail(MailDto mailDto) throws Exception {
+
+		/*SimpleMailMessage mailMessage = new SimpleMailMessage();
 		mailMessage.setTo(mailDto.getAddress());
 		mailMessage.setFrom(this.FROM_ADDRESS);
 		mailMessage.setSubject(mailDto.getTitle());
 		mailMessage.setText(mailDto.getContents());
 		
-		mailSender.send(mailMessage);
+		mailSender.send(mailMessage);*/
 	}
 }

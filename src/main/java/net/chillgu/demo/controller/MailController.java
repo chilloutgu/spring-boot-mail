@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import lombok.RequiredArgsConstructor;
+import net.chillgu.demo.dto.MailDto;
+import net.chillgu.demo.service.MailService;
 
 @Controller
 @RequiredArgsConstructor
