@@ -21,7 +21,7 @@ public class MailController {
 	}
 	
 	@PostMapping("/mail")
-	public void execMail(MailDto mailDto) {
+	public void execMail(MailDto mailDto) throws Exception {
 		mailService.sendMail(mailDto);
 	}
 }

@@ -35,8 +35,8 @@ public class MailHandler {
 		messageHelper.setSubject(subject);
 	}
 	
-	public void setText(String text) throws MessagingException {
-		messageHelper.setText(text);
+	public void setText(String text, boolean useHtml) throws MessagingException {
+		messageHelper.setText(text, useHtml);
 	}
 	
 	public void setAttach(String filename, String path) throws MessagingException, IOException {
