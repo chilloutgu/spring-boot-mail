@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>send mails</title>
+</head>
+<body>
+	<h1>We're going to send mails!</h1>
+	
+	<form method="post" th:action="@{/mail}">
+		<input name="address" placeholder="address" />
+		<input name="title" placeholder="title" />
+		<textarea name="contents" placeholder="you can write here" cols="60" rows="20"></textarea>
+		<button>send</button>
+	</form>
+</body>
+</html>
